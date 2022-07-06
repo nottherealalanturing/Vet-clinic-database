@@ -3,3 +3,5 @@
 CREATE TABLE animals(id INT GENERATED ALWAYS AS IDENTITY, name VARCHAR, date_of_birth DATE, escape_attempts INT, neutered BOOL, weight_kg DECIMAL);
 
 ALTER TABLE animals ADD species VARCHAR;
+
+CREATE TABLE owners(id INT GENERATED ALWAYS AS IDENTITY, full_name VARCHAR, age INT, PRIMARY KEY (id));

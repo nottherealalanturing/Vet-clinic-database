@@ -18,3 +18,9 @@ BEGIN;
 INSERT INTO owners (full_name, age) VALUES ('Sam Smith', 34), ('Jennifer Orwell', 19), ('Bob', 45), ('Melody Pond', 77), ('Dean Winchester', 14), ('Jodie Whittaker', 38);
 INSERT INTO species (id, name) VALUES ('Pokemon', 'Digimon');
 COMMIT;
+
+BEGIN;
+UPDATE animals SET species_id = (SELECT id FROM species WHERE name = 'Digimon') WHERE animals.name LIKE '%mon';
+UPDATE animals SET species_id = (SELECT id FROM species WHERE name = 'Pokemon') WHERE animals.name NOT LIKE '%mon';
+COMMIT;
+

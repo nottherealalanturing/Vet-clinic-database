@@ -24,3 +24,9 @@ UPDATE animals SET species_id = (SELECT id FROM species WHERE name = 'Digimon') 
 UPDATE animals SET species_id = (SELECT id FROM species WHERE name = 'Pokemon') WHERE animals.name NOT LIKE '%mon';
 COMMIT;
 
+BEGIN;
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith') WHERE animals.name = 'Agumon';
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell') WHERE animals.name = 'Gabumon' OR animals.name = 'Pikachu';
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob') WHERE animals.name = 'Devimon' OR animals.name = 'Plantmon';
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond') WHERE animals.name = 'Charmander' OR animals.name = 'Squirtle' or animals.name = 'Blossom';
+COMMIT;

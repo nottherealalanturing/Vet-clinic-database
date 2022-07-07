@@ -14,8 +14,8 @@ ALTER TABLE animals ADD PRIMARY KEY(id);
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INT;
 ALTER TABLE animals ADD COLUMN owner_id INT;
-ALTER TABLE animals ADD CONSTRAINT species_fk FOREIGN KEY (species_id) REFERENCES animals(id);
-ALTER TABLE animals ADD CONSTRAINT owner_fk FOREIGN KEY (owner_id) REFERENCES animals(id);
+ALTER TABLE animals ADD CONSTRAINT species_fk FOREIGN KEY (species_id) REFERENCES animals(id) ON DELETE CASCADE;
+ALTER TABLE animals ADD CONSTRAINT owner_fk FOREIGN KEY (owner_id) REFERENCES animals(id) ON DELETE CASCADE;
 COMMIT;
 
 

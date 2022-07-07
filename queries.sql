@@ -16,3 +16,5 @@ SELECT sum(weight_kg)/ count(*) as average FROM animals;
 SELECT COUNT(*) as most_escape, neutered FROM animals GROUP BY neutered;
 SELECT species, MIN(weight_kg) as min_weight, MAX(weight_kg) as max_weight FROM animals GROUP BY species;
 SELECT species, avg(escape_attempts) from animals WHERE date_of_birth >= '1/1/1990' AND date_of_birth <= '1/1/2000/' GROUP BY species;
+
+ SELECT * FROM animals a JOIN owners o ON a.id = o.id WHERE o.full_name = 'Melody Pond';

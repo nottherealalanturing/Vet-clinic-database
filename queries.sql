@@ -93,3 +93,8 @@ WHERE v.name = 'Maisy Smith'
 GROUP BY a.name, species.name 
 LIMIT 1;
 
+SELECT * FROM animal_count;
+SELECT * FROM visits;
+
+
+

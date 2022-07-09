@@ -96,6 +96,7 @@ LIMIT 1;
 SELECT * FROM animal_count;
 SELECT * FROM visits;
 SELECT * FROM specializations;
+SELECT * FROM vets;
 
 
 

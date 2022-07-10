@@ -100,3 +100,4 @@ SELECT * FROM vets;
 
 SELECT count(*) FROM visits;
 SELECT count(*) FROM animal_count;
+SELECT count(*) FROM specializations;

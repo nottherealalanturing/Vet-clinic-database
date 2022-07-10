@@ -99,8 +99,4 @@ SELECT * FROM specializations;
 SELECT * FROM vets;
 
 SELECT count(*) FROM visits;
-
-
-
-
-
+SELECT count(*) FROM animal_count;

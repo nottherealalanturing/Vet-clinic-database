@@ -98,5 +98,9 @@ SELECT * FROM visits;
 SELECT * FROM specializations;
 SELECT * FROM vets;
 
+SELECT count(*) FROM visits;
+
+
+
 
 

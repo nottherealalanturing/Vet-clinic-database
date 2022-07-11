@@ -102,3 +102,6 @@ SELECT count(*) FROM visits;
 SELECT count(*) FROM animal_count;
 SELECT count(*) FROM specializations;
 SELECT count(*) FROM vets;
+SELECT MAX(*) FROM visits;
+SELECT MAX(*) FROM animal_count;
+SELECT MAX(*) FROM vets;

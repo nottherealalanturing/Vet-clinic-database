@@ -1,5 +1,7 @@
 # Vet Clinic Database
 
+![diagram](https://user-images.githubusercontent.com/40478490/178498996-f7720276-bf3b-4296-8e5d-b8f38f8b8861.png)
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
